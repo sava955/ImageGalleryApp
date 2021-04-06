@@ -1,0 +1,120 @@
+<div>
+    <div @ngIfAnimation fxLayout.gt-sm="row" fxLayout="column">
+        <div fxFlex.gt-sm="70%" fxFlex="100%" (mouseenter)="aStart()" (mouseleave)="aStop()">
+            <div class="img-box" fxLayout="column" fxLayoutAlign="center center">
+                <img [src]="image.image" alt="">
+                <div *ngIf="hovered" class="slide-ctrl">
+                    <div @hoverAnimation fxLayout="row" fxLayoutAlign="space-between center" class="ctrl-box">
+                        <div>
+                            <button (click)="prevImage()" class="ctrl-btn">
+                                <span class="material-icons">
+                                    arrow_back_ios
+                                </span>
+                            </button>
+                        </div>
+                        <div>
+                            <button (click)="nextImage()" class="ctrl-btn">
+                                <span class="material-icons">
+                                    arrow_forward_ios
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div fxFlex.gt-sm="30%" fxFlex="100%">
+            <div class="image-data">
+                <div fxLayout="row" fxLayoutAlign="space-between center">
+                    <div fxLayout="row" fxLayoutAlign="start center" class="img-user">
+                        <img [src]="image.by.avatar" alt="" height="30px" width="30px">
+                        <span class="username">{{image.by.username}}</span>
+                    </div>
+                    <button (click)="close()" class="ctrl-btn"><span class="material-icons">
+                            close
+                        </span></button>
+                </div>
+                <div *ngIf="showEllipsis; else noEllipsis">
+                    <p class="ellipsis-description" ellipsis="...Read more" [ellipsis-content]="image.description"
+                        (ellipsis-click-more)="showEllipsis = false"></p>
+                </div>
+                <ng-template #noEllipsis>
+                    <p class="image-description">
+                        {{image.description}}
+                        <br />
+                        <button (click)="showEllipsis = true" mat-raised-button color="accent">Show less</button>
+                    </p>
+                </ng-template>
+                <div fxLayout="row" fxLayoutAlign="start center" class="like-comment">
+                    <div class="likes-length-box">
+                        <div *ngIf="image.likes.length === 0" fxLayout="row" fxLayoutAlign="start center">
+                            <button class="like-comment-btn">
+                                <span class="material-icons like-comment-icon">
+                                    favorite_border
+                                </span>
+                            </button>
+                            <span class="likes-comments-length">{{image.likes.length}}</span>
+                        </div>
+                        <div *ngIf="image.likes.length > 0" fxLayout="row" fxLayoutAlign="start center">
+                            <button class="like-comment-btn">
+                                <span class="material-icons like-comment-icon">
+                                    favorite
+                                </span>
+                            </button>
+                            <button (click)="getLikeDetails()" class="like-comment-btn">
+                                <span class="likes-comments-length">{{image.likes.length}}</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="comments-length-box">
+                        <div *ngIf="image.comments.length === 0" fxLayout="row" fxLayoutAlign="start center">
+                            <button (click)="scrollToCommentForm(commentForm)" class="like-comment-btn">
+                                <span class="material-icons like-comment-icon">
+                                    chat_bubble_outline
+                                </span>
+                            </button>
+                            <span class="likes-comments-length">{{image.comments.length}}</span>
+                        </div>
+                        <div *ngIf="image.comments.length > 0" fxLayout="row" fxLayoutAlign="start center">
+                            <button (click)="scrollToCommentForm(commentForm)" class="like-comment-btn">
+                                <span class="material-icons like-comment-icon">
+                                    chat_bubble
+                                </span>
+                            </button>
+                            <span class="likes-comments-length">{{image.comments.length}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="image.comments.length > 0">
+                    <div *ngFor="let comment of image.comments" class="comment-box">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <img [src]="comment.by.avatar" alt="" height="30px" width="30px">
+                            <span class="username">{{comment.by.username}}</span>
+                        </div>
+                        <p>{{comment.comment}}</p>
+                    </div>
+                </div>
+                <div *ngIf="image.comments.length === 0">
+                    No comments found
+                </div>
+                <div #commentForm>
+                    <mat-form-field class="comment-form">
+                        <mat-label>Your comment</mat-label>
+                        <textarea matInput [(ngModel)]="comment"></textarea>
+                    </mat-form-field>
+    
+                    <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="5px">
+                        <button mat-raised-button color="accent" class="icon-btn"><span class="material-icons">
+                                photo_library
+                            </span></button>
+                        <button (click)="toggleEmojiPicker()" mat-raised-button color="accent" class="icon-btn">
+                            😀</button><br>
+                        <emoji-mart class="emoji-mart" set="google" *ngIf="showEmojiPicker" [color]="'#fff'"
+                            (emojiSelect)="addEmoji($event)"></emoji-mart>
+                        <button (click)="commentImage()" mat-raised-button color="primary" class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

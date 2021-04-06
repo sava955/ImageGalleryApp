@@ -1,0 +1,21 @@
+<div *ngIf="gallery" class="gallery">
+    <h2 class="title">{{gallery.name}}</h2>
+    <div *ngIf="images">
+        <ngx-masonry>
+            <div ngxMasonryItem class="masonry-item" *ngFor="let item of images; let i = index">
+                <!--a data-toggle="modal" data-target="#imageDetails" (click)="toggleModal(i)">
+                    
+                </a-->
+                <div (click)="getImageDetails(i)">
+                    <!--img [src]="item.image"-->
+                    <img [src]="item.image" />
+                </div>
+            </div>
+        </ngx-masonry>
+        <div *ngIf="!allLoaded" fxLayout="row" fxLayoutAlign="center">
+            <button mat-raised-button color="primary" class="btn" (click)="loadMore()">Load more <span class="material-icons">
+                loop
+                </span></button>
+        </div>
+    </div>
+</div>

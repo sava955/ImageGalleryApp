@@ -1,0 +1,351 @@
+{
+    "galleries": [
+        {
+            "name": "Field",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Desert",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Ocean",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Sky",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Mountains",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Roads",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Rivers",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Forest",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Flowers",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        },
+        {
+            "name": "Winter",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "images": []
+        }
+    ],
+    "imagesOne": [
+        {
+            "image": "../../assets/images/img-1.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-2.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-3.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-4.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-5.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesTwo": [
+        {
+            "image": "../../assets/images/img-6.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-7.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-8.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesThree": [
+        {
+            "image": "../../assets/images/img-9.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-10.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-11.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-12.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-13.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesFour": [
+        {
+            "image": "../../assets/images/img-14.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-15.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-16.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-17.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-18.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesFive": [
+        {
+            "image": "../../assets/images/img-19.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-20.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-21.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesSix": [
+        {
+            "image": "../../assets/images/img-23.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-24.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-25.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesSeven": [
+        {
+            "image": "../../assets/images/img-26.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-27.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-28.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-29.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-30.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesEight": [
+        {
+            "image": "../../assets/images/img-31.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-32.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-33.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-34.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesNine": [
+        {
+            "image": "../../assets/images/img-35.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-36.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-37.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-38.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-39.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "imagesTen": [
+        {
+            "image": "../../assets/images/img-40.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-41.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-42.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-43.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        },
+        {
+            "image": "../../assets/images/img-44.jpg",
+            "description": "Lorem ipsum dolor sum",
+            "likes": [],
+            "comments": []
+        }
+    ],
+    "comments": [
+        {
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ],
+    "users": [
+        {
+            "avatar": "../../assets/images/avatar.png",
+            "username": "johndoe911",
+            "email": "john.doe@gmail.com",
+            "password": "123456"
+        },
+        {
+            "avatar": "../../assets/images/avatar.png",
+            "username": "janedoe922",
+            "email": "jane.doe@gmail.com",
+            "password": "123456"
+        }
+    ]
+}

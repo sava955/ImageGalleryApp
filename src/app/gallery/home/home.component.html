@@ -4,10 +4,10 @@
         <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
 
-    <div fxLayout="row" @ngIfAnimation>
-        <div *ngIf="isLoaded && firstGallery" @left fxFlex="50%;" fxFlex.sm="100%" class="first-gallery"
+    <div fxLayout.gt-sm="row" fxLayout="column" @ngIfAnimation>
+        <div *ngIf="isLoaded && firstGallery" @left fxFlex.gt-sm="50%;" fxFlex="100%" class="first-gallery"
             (mouseenter)="animateDiv($event)" (mouseleave)="stopAnimation($event)">
-            <a href="">
+            <a routerLink="../gallery/{{firstGallery._id}}">
                 <div class="background" [ngStyle]="{'background-image': 'url(' + firstGallery.images[0].image + ')'}">
                 </div>
                 <div class="overlay"></div>
@@ -40,11 +40,11 @@
                 </div>
             </a>
         </div>
-        <div [@listAnimation]="mainGalleries.length" fxFlex="50%;" fxFlex.sm="100%">
+        <div [@listAnimation]="mainGalleries.length" fxFlex.gt-sm="50%;" fxFlex="100%">
             <div fxLayout="row" fxLayout="row wrap">
-                <div *ngFor="let gallery of mainGalleries; let i = index" fxFlex="50%;" class="main-gallery"
+                <div *ngFor="let gallery of mainGalleries; let i = index" fxFlex="50%" class="main-gallery"
                     (mouseenter)="animateBox(i)" (mouseleave)="stopAnimateBox(i)">
-                    <a *ngIf="isLoaded && gallery" href="">
+                    <a *ngIf="isLoaded && gallery" routerLink="../gallery/{{gallery._id}}">
                         <div class="background"
                             [ngStyle]="{'background-image': 'url(' + gallery.images[0].image + ')'}">
                         </div>
@@ -93,7 +93,7 @@
     </div>
 
     <div fxLayout="row" fxLayoutAlign="end">
-        <button mat-raised-button color="primary" class="btn">See all galleries <span class="material-icons">
+        <button mat-raised-button color="primary" class="btn" routerLink="../all-galleries">See all galleries <span class="material-icons">
                 arrow_right_alt
             </span></button>
     </div>
