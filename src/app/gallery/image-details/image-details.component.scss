@@ -1,0 +1,225 @@
+@import '../../../styles/custom-theme.scss';
+@import '../../../styles/variables';
+
+.img-box {
+    background: mat-color($Primary);
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+
+    /*&:hover {
+        .slide-ctrl {
+            display: block;
+        }
+    }*/
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .slide-ctrl {
+        //display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: $imageBg;
+        transition: .5s;
+
+        .ctrl-box {
+            position: relative;
+            height: 100%;
+            padding: 0 20px;
+
+            .material-icons {
+                color: $white;
+                font-size: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 959px) {
+        height: auto;
+    }
+}
+
+.ctrl-btn {
+    border: none;
+    background: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.username {
+    margin-left: 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.image-data {
+    padding: 10px 20px;
+    height: 70vh;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        margin: 5px;
+        box-shadow: inset 0 0 5px gray; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: mat-color($Primary);
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: mat-color($Primary);
+        opacity: 0.8;
+      }
+
+    .username {
+        font-weight: 700;
+    }
+
+    .ellipsis-description {
+        height: 100px;
+
+        .ngx-ellipsis-more {
+            color: mat-color($Primary);
+        }
+    }
+
+    .image-description {
+        height: auto;
+    }
+
+    .like-comment {
+        margin-bottom: 20px;
+
+        .likes-length-box, .comments-length-box {
+            padding-right: 10px;
+
+            .like-comment-btn {
+                background-color: transparent;
+                border: none;
+                padding: 0 !important;
+                color: mat-color($Primary);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .likes-comments-length {
+            font-size: 18px;
+        }
+    }
+
+    .comment-box {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 20%;
+            height: 2px;
+            background-color: mat-color($Primary);
+            transition: .5s;
+        }
+
+        &:hover {
+            &::after {
+                width: 30%;
+            }
+        }
+    }
+
+    .comment-form {
+        width: 100%;
+    }
+
+    .icon-btn {
+        border-radius: 50px;
+    }
+
+    .emoji-mart {
+        z-index: 100;
+        position: absolute;
+        top: 37px;
+        right: 0;
+    }
+    /*.emoji-box {
+        position: relative;
+        width: 100%;
+
+        .emoji-mart {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 36px;
+
+            ::ng-deep {
+                .emoji-mart-dark {
+                    width: 100% !important;
+
+                    .emoji-mart-scroll {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }*/
+
+    .btn {
+        width: 100px;
+        transition: .5s;
+        border-radius: 30px;
+        background-color: mat-color($Primary);
+
+        ::ng-deep {
+            .mat-button-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    transition: 1s;
+                }
+            }
+        }
+        
+        &:hover {
+            width: 150px;
+
+            ::ng-deep {
+                .mat-button-wrapper {
+                    span {
+                       margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

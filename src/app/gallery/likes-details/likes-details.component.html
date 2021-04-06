@@ -1,0 +1,17 @@
+<div>
+    <div fxLayout="row" fxLayoutAlign="end">
+        <button (click)="close()" class="ctrl-btn">
+            <span class="material-icons">
+                close
+            </span>
+        </button>
+    </div>
+    <div *ngIf="data" class="like-details">
+        <div *ngFor="let like of data.image.likes" class="like-box">
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <img [src]="like.avatar" alt="" height="30px" width="30px">
+                <span class="username">{{like.username}}</span>
+            </div>
+        </div>
+    </div>
+</div>

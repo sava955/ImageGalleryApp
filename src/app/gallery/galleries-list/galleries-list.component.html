@@ -1,0 +1,53 @@
+<div class="gallery" fxLayout="column" fxLayoutAlign="space-between">
+    <div>
+        <h1 class="title">Galleries list</h1>
+        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div @ngIfAnimation>
+        <div [@listAnimation]="galleries.length" class="galleries">
+            <div fxLayout="row" fxLayout="row wrap">
+                <div *ngFor="let gallery of galleries; let i = index" fxFlex.gt-sm="25%;" fxFlex="50%;" class="main-gallery"
+                    (mouseenter)="animateBox(i)" (mouseleave)="stopAnimateBox(i)">
+                    <a *ngIf="isLoaded && gallery" routerLink="../gallery/{{gallery._id}}">
+                        <div class="background"
+                            [ngStyle]="{'background-image': 'url(' + gallery.images[0].image + ')'}">
+                        </div>
+                        <div class="overlay"></div>
+                        <div *ngIf="hoveredArr[i]" class="hover-overlay-box">
+                            <div @overlayText class="about-gallery-box">
+                                <div fxLayout="column" class="about-gallery-hover about-gallery-hover-sm">
+                                    <h4 class="gallery-title">{{gallery.name}}</h4>
+                                    <span class="created-at created-at-sm">{{gallery.createdAt | date : 'dd.MM - h:mm a'}}</span>
+                                    <div fxLayout="row" class="likes-comments-box">
+                                        <div fxLayout="row" class="likes-comments">
+                                            <span class="material-icons">
+                                                favorite_border
+                                            </span>
+                                            <span>{{gallery.likes.length}}</span>
+                                        </div>
+                                        <div fxLayout="row" class="likes-comments">
+                                            <span class="material-icons">
+                                                chat_bubble_outline
+                                            </span>
+                                            <span>{{gallery.comments.length}}</span>
+                                        </div>
+                                    </div>
+                                    <p class="gallery-description" ellipsis [ellipsis-content]="gallery.description"></p>
+                                </div>
+                            </div>
+                            <div @overlayLeft class="hover-overlay overlay-left"></div>
+                            <div @overlayRight class="hover-overlay overlay-right"></div>
+                        </div>
+                        <div *ngIf="!hoveredArr[i]" fxLayout="column" fxLayoutAlign="end" class="about-gallery-box">
+                            <div fxLayout="column" fxLayoutAlign="end" class="about-gallery about-gallery-sm">
+                                <h4 class="gallery-title">{{gallery.name}}</h4>
+                                <span class="created-at">{{gallery.createdAt | date : 'dd.MM - h:mm a'}}</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

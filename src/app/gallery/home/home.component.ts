@@ -9,6 +9,7 @@ import {
   animateChild,
   stagger
 } from '@angular/animations';
+import { GalleryService } from '../gallery.service';
 
 export interface Tile {
   color: string;
@@ -69,7 +70,7 @@ export interface Tile {
           stagger(200, [
             animate('500ms 500ms', style({ opacity: 1 }))
           ])
-        ])
+        ], {optional: true})
       ])
     ]),
     trigger('overlayText', [
@@ -170,7 +171,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
     {
       id: 2,
       name: 'Gallery 2',
-      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
       by: 'John Doe',
       likes: ['Donald Trump', 'Vladimir Putin', 'Angela Merkel'],
       comments: [],
@@ -187,7 +188,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
     {
       id: 3,
       name: 'Gallery 3',
-      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
       by: 'John Doe',
       likes: ['Donald Trump', 'Vladimir Putin', 'Angela Merkel'],
       comments: [],
@@ -204,7 +205,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
     {
       id: 4,
       name: 'Gallery 4',
-      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
       by: 'John Doe',
       likes: ['Donald Trump', 'Vladimir Putin', 'Angela Merkel'],
       comments: [],
@@ -221,7 +222,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
     {
       id: 5,
       name: 'Gallery 5',
-      description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum sit amet ex quis condimentum. Etiam vestibulum ligula sapien, sit amet feugiat purus imperdiet eu. Donec efficitur odio felis, id placerat est pretium eu. Suspendisse felis mauris, luctus vitae ex ac, consequat maximus arcu. Integer iaculis hendrerit pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis iaculis suscipit nibh congue laoreet. Nam tincidunt in ipsum in vestibulum. Praesent gravida semper sapien ut vestibulum.',
       by: 'John Doe',
       likes: ['Donald Trump', 'Vladimir Putin', 'Angela Merkel'],
       comments: [],
@@ -245,7 +246,9 @@ export class HomeComponent implements OnInit, AfterContentInit {
     { text: 'Five', cols: 1, rows: 1, color: 'pink' }
   ];
 
-  constructor() { }
+  constructor(
+    private galleryService: GalleryService
+  ) { }
 
   ngOnInit(): void {
     this.getGalleries();
@@ -255,13 +258,15 @@ export class HomeComponent implements OnInit, AfterContentInit {
 
   getGalleries() {
     let i = 0;
-    this.firstGallery = this.galleries[0];
-    this.mainGalleries = this.galleries.splice(1, 5);
-    this.mainGalleries.forEach(gallery => {
-      this.hoveredArr[i] = this.hovered;
-      i += 1;
-    })
-    this.isLoaded = true;
+    this.galleryService.getGalleries().subscribe((res) => {
+      this.firstGallery = res[0];
+      this.mainGalleries = res.splice(1, 4);
+      this.mainGalleries.forEach(gallery => {
+        this.hoveredArr[i] = this.hovered;
+        i += 1;
+      })
+      this.isLoaded = true;
+    });
   }
 
   animateDiv(event: any) {
@@ -271,7 +276,7 @@ export class HomeComponent implements OnInit, AfterContentInit {
   stopAnimation(event: any) {
     this.show = false;
   }
-  
+
   animateBox(i: number) {
     this.hoveredArr[i] = true;
   }
